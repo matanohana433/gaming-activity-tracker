@@ -30,8 +30,8 @@ The Gaming Activity Tracker is a Python application that uses the Pixela API to 
 1. Clone this repository:
 
 
-    git clone https://github.com/matanohana433/gaming-activity-tracker.git
-    cd gaming-activity-tracker
+        git clone https://github.com/matanohana433/gaming-activity-tracker.git
+        cd gaming-activity-tracker
 2. Create and activate a virtual environment (optional but recommended):
 
 **Windows:**
@@ -45,26 +45,26 @@ The Gaming Activity Tracker is a Python application that uses the Pixela API to 
 3. Install dependencies:
 
 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 4. Set environment variables:
 
    * Create a .env file or set the variables manually:
 
 
-    USERNAME=your_pixela_username
-    TOKEN=your_pixela_token
+            USERNAME=your_pixela_username
+            TOKEN=your_pixela_token
 ## 🚀 Usage
 
 1. **Create a Pixela User:** Uncomment and run the following code in main.py:
 
 
-    response = requests.post(url=pixela_endpoint, json=user_params)
-    print(response.text)
+        response = requests.post(url=pixela_endpoint, json=user_params)
+        print(response.text)
 2. **Create a Graph:** Uncomment and run the graph creation code in main.py:
 
 
-    graph_response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
-    print(graph_response.text)
+        graph_response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+        print(graph_response.text)
 3. **Add Daily Data:**
 
 * Input the number of hours played when prompted:
@@ -77,13 +77,13 @@ The Gaming Activity Tracker is a Python application that uses the Pixela API to 
 4. **Update Existing Data:** Uncomment and run the update pixel code in main.py:
 
 
-    edit_pixel_response = requests.put(url=edit_pixel_endpoint, json=edit_pixel_params, headers=headers)
-    print(edit_pixel_response.text)
+        edit_pixel_response = requests.put(url=edit_pixel_endpoint, json=edit_pixel_params, headers=headers)
+        print(edit_pixel_response.text)
 5. **Delete Specific Data:** Uncomment and run the delete pixel code in main.py:
 
 
-    delete_pixel_response = requests.delete(url=delete_pixel_endpoint, headers=headers)
-    print(delete_pixel_response.text)
+        delete_pixel_response = requests.delete(url=delete_pixel_endpoint, headers=headers)
+        print(delete_pixel_response.text)
 ## 🌟 Key Features
 
 1. **Dynamic Date Handling:**
